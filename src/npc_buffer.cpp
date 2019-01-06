@@ -71,7 +71,7 @@ public:
     void OnLogin(Player* player)
     {
         // Announce Module
-        if (sConfigMgr->GetBoolDefault("BufferNPC.Announce", true))
+        if (sConfigMgr->GetBoolDefault("BufferNPC.Announce", false))
         {
             ChatHandler(player->GetSession()).SendSysMessage("This server is running the |cff4CFF00BufferNPC |rmodule.");
         }
